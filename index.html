@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="NAYJAN Studios – Social Media, Content Creation und modernes Webdesign für Marken und Unternehmen.">
+  <title>NAYJAN Studios — Make your brand stand out</title>
+  <style>
+    :root{--ink:#111827;--muted:#667085;--blue:#5267e8;--blue2:#7888ff;--line:#e8eaf1;--paper:#f7f8fc;--white:#fff;--dark:#11172b;--radius:22px;--shadow:0 18px 55px rgba(26,35,75,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:21px;font-weight:850;letter-spacing:-1.1px}.brand span{color:var(--blue)}.navlinks{display:flex;gap:30px;align-items:center;color:#515b70;font-size:14px;font-weight:650}.navlinks a:hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:13px 21px;background:var(--blue);color:white;font-weight:750;box-shadow:0 9px 22px rgba(82,103,232,.22);transition:.2s;cursor:pointer}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#4055d7}.menu{display:none;background:white;border:1px solid var(--line);border-radius:12px;padding:9px 12px}
+    .hero{padding:65px 0 86px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(120,136,255,.18),transparent 68%);right:-130px;top:-130px;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;position:relative}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:8px 13px;border:1px solid #e2e6fb;background:#fff;border-radius:99px;color:#5263ca;font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.dot{width:7px;height:7px;background:#6b7cf1;border-radius:50%}h1{font-size:clamp(46px,6.2vw,78px);line-height:1.02;letter-spacing:-4.4px;margin:23px 0 22px;max-width:680px}h1 em{font-style:normal;color:var(--blue)}.hero-copy{font-size:18px;color:var(--muted);max-width:540px;margin:0 0 30px}.actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap}.btn.secondary{background:white;color:var(--ink);border:1px solid var(--line);box-shadow:none}.btn.secondary:hover{background:#f0f2ff;color:var(--blue)}.micro{margin-top:25px;color:#8a91a2;font-size:12px}
+    .visual{min-height:430px;border-radius:30px;background:linear-gradient(145deg,#18213e,#303e75 60%,#5367d8);padding:26px;box-shadow:0 28px 70px rgba(35,49,105,.2);position:relative;overflow:hidden;color:white}.visual:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.15);border-radius:50%;right:-90px;top:-100px;box-shadow:0 0 0 35px rgba(255,255,255,.035),0 0 0 75px rgba(255,255,255,.025)}.visual-top{display:flex;justify-content:space-between;align-items:center;color:#cbd3ff;font-size:12px;letter-spacing:1px;text-transform:uppercase}.visual-title{font-size:35px;line-height:1.05;letter-spacing:-1.5px;font-weight:850;margin-top:55px;max-width:290px}.visual-title span{color:#aebaff}.visual-sub{color:#c3cbee;font-size:13px;margin-top:13px}.mock-cards{display:flex;gap:12px;margin-top:38px;position:relative;z-index:1}.mock{flex:1;min-height:116px;border-radius:17px;padding:14px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px)}.mock b{display:block;font-size:22px}.mock small{color:#d4d9f5;font-size:11px}.floating{position:absolute;right:25px;bottom:22px;border-radius:15px;background:white;color:#202b50;padding:12px 16px;font-size:12px;font-weight:800;box-shadow:var(--shadow);z-index:2}
+    section{padding:82px 0}.section-head{text-align:center;max-width:670px;margin:0 auto 42px}.kicker{color:var(--blue);font-size:12px;font-weight:850;letter-spacing:1.5px;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.12;letter-spacing:-2px;margin:12px 0}.section-head p{color:var(--muted);margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:0 8px 25px rgba(30,40,80,.025);transition:.25s}.service:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.icon{width:48px;height:48px;border-radius:15px;background:#eef0ff;color:var(--blue);display:grid;place-items:center;font-size:22px}.service h3{font-size:21px;margin:20px 0 8px;letter-spacing:-.5px}.service p{color:var(--muted);font-size:14px;min-height:68px}.service ul{padding:0;list-style:none;margin:18px 0 23px;color:#4c566b;font-size:13px}.service li{margin:8px 0}.service li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:9px}.price{font-weight:850;font-size:18px}.price small{font-size:12px;font-weight:500;color:var(--muted)}
+    .dark-section{background:var(--dark);color:white}.dark-section .section-head p{color:#aab3ca}.dark-section .kicker{color:#aab6ff}.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.package{border:1px solid #303953;border-radius:23px;padding:28px;background:#171f38;position:relative}.package.featured{background:linear-gradient(155deg,#33458f,#202b55);border-color:#7f8df1;box-shadow:0 20px 50px rgba(0,0,0,.2)}.tag{display:inline-block;font-size:10px;font-weight:850;letter-spacing:1px;text-transform:uppercase;color:#b9c3ff}.package h3{font-size:23px;margin:12px 0 5px}.package .desc{font-size:13px;color:#b5bfd7;min-height:42px}.package .cost{font-size:31px;font-weight:850;margin:20px 0}.package .cost small{font-size:12px;font-weight:500;color:#c0c9df}.package ul{padding:0;list-style:none;color:#d5dcef;font-size:13px;min-height:145px}.package li{margin:10px 0}.package li:before{content:"✓";color:#aebaff;margin-right:9px;font-weight:900}.package .btn{width:100%;background:white;color:#1b2855;box-shadow:none}.package .btn:hover{background:#e8ebff}.note{text-align:center;color:#aab3ca;font-size:11px;margin-top:22px}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.about-panel{background:linear-gradient(145deg,#e7eaff,#f4f5ff);border:1px solid #e0e4ff;border-radius:28px;padding:36px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}.about-panel strong{font-size:36px;letter-spacing:-2px;line-height:1.1;color:#27366f}.about-panel span{color:#6672ad;font-size:13px}.about-copy h2{font-size:42px;line-height:1.1;letter-spacing:-2px;margin:12px 0 18px}.about-copy p{color:var(--muted)}.pill-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.pill{padding:8px 12px;border-radius:99px;background:white;border:1px solid var(--line);font-size:12px;font-weight:700;color:#566078}
+    .contact{background:#eef0fb}.contact-box{background:white;border:1px solid #e4e7f2;border-radius:28px;padding:45px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;box-shadow:var(--shadow)}.contact-box h2{font-size:38px;line-height:1.1;letter-spacing:-1.8px;margin:10px 0}.contact-box p{color:var(--muted)}.contact-side{background:#f7f8fd;border-radius:19px;padding:22px}.contact-side b{display:block;margin-bottom:8px}.contact-side p{font-size:13px;margin:0}.contact-side .btn{margin-top:18px}.footer{padding:28px 0;color:#81899b;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:18px;align-items:center}.footer .brand{color:var(--ink);font-size:17px}
+    @media(max-width:850px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding-top:40px}.visual{min-height:380px}.services,.packages{grid-template-columns:1fr}.service p{min-height:0}.package ul{min-height:0}.contact-box{grid-template-columns:1fr}.about-grid{gap:28px}}
+    @media(max-width:640px){.wrap{width:min(100% - 30px,1160px)}.nav{height:70px}.navlinks{display:none;position:absolute;top:65px;left:15px;right:15px;background:white;border:1px solid var(--line);border-radius:16px;padding:18px;flex-direction:column;align-items:stretch;gap:14px;z-index:10;box-shadow:var(--shadow)}.navlinks.open{display:flex}.nav-cta{display:none}.menu{display:block}.hero{padding:32px 0 55px}h1{font-size:49px;letter-spacing:-3px}.hero-copy{font-size:16px}.visual{padding:21px;min-height:360px}.visual-title{font-size:31px;margin-top:43px}.mock-cards{margin-top:30px}.mock{padding:11px;min-height:100px}.mock b{font-size:18px}section{padding:62px 0}.section-head{margin-bottom:30px}.about-copy h2{font-size:35px}.contact-box{padding:27px}.contact-box h2{font-size:33px}.footer-inner{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#start" aria-label="NAYJAN Studios Startseite">NAYJAN<span>.</span> STUDIOS</a>
+    <nav class="navlinks" id="navlinks" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a><a href="#pakete">Pakete</a><a href="#ueber-uns">Über uns</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="nav-cta" href="#kontakt">Projekt starten ↗</a>
+    <button class="menu" id="menu" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Creative digital studio</div>
+          <h1>Deine Marke.<br>Dein Auftritt.<br><em>Mehr Wirkung.</em></h1>
+          <p class="hero-copy">Wir machen aus guten Ideen einen starken digitalen Auftritt. Mit kreativem Content, Social Media und modernen Websites, die im Kopf bleiben.</p>
+          <div class="actions"><a class="btn" href="#kontakt">Lass uns starten ↗</a><a class="btn secondary" href="#leistungen">Leistungen entdecken</a></div>
+          <div class="micro">STRATEGIE · CONTENT · DESIGN</div>
+        </div>
+        <div class="visual" aria-label="NAYJAN Studios Kreativbereich">
+          <div class="visual-top"><b>NAYJAN STUDIOS</b><span>01 / DIGITAL</span></div>
+          <div class="visual-title">Create.<br><span>Connect.</span><br>Grow.</div>
+          <div class="visual-sub">Wir bringen deine Idee auf das nächste Level.</div>
+          <div class="mock-cards"><div class="mock"><b>Social</b><small>Deine Community</small></div><div class="mock"><b>Content</b><small>Deine Geschichte</small></div><div class="mock"><b>Web</b><small>Dein Auftritt</small></div></div>
+          <div class="floating">Ideas into impact ✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leistungen">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Was wir machen</div><h2>Alles für deinen<br>digitalen Auftritt.</h2><p>Von der ersten Idee bis zum fertigen Auftritt: Wir unterstützen dich genau dort, wo deine Marke sichtbarer werden soll.</p></div>
+        <div class="services">
+          <article class="service"><div class="icon">◉</div><h3>Social Media</h3><p>Ein klarer Auftritt und Inhalte, die zu deiner Marke und deiner Zielgruppe passen.</p><ul><li>Content- und Profilplanung</li><li>Ideen für Reels und Posts</li><li>Unterstützung beim Aufbau</li></ul><div class="price">ab 299 € <small>/ Monat · Richtwert</small></div></article>
+          <article class="service"><div class="icon">▶</div><h3>Content Creation</h3><p>Kreative Videos und visuelle Inhalte, die Aufmerksamkeit erzeugen und deine Botschaft zeigen.</p><ul><li>Videoideen und Konzepte</li><li>Schnitt und Bearbeitung</li><li>Reels, Shorts und Clips</li></ul><div class="price">ab 149 € <small>/ Projekt · Richtwert</small></div></article>
+          <article class="service"><div class="icon">⌘</div><h3>Webdesign</h3><p>Moderne, übersichtliche Websites, die professionell aussehen und Vertrauen schaffen.</p><ul><li>Modernes Seitendesign</li><li>Mobile Darstellung</li><li>Struktur und Nutzerführung</li></ul><div class="price">ab 499 € <small>/ Website · Richtwert</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="pakete">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Unsere Pakete</div><h2>Der passende Start<br>für dein nächstes Level.</h2><p>Wähle den Umfang, der zu deinem Vorhaben passt. Jedes Angebot kann individuell angepasst werden.</p></div>
+        <div class="packages">
+          <article class="package"><span class="tag">Für den Einstieg</span><h3>Starter</h3><div class="desc">Ein professioneller erster Schritt für deinen Social-Media-Auftritt.</div><div class="cost">299 € <small>/ Monat, ab</small></div><ul><li>Monatliche Content-Planung</li><li>Bis zu 4 Kurzvideos</li><li>Profil- und Design-Check</li><li>Persönliche Abstimmung</li></ul><a class="btn" href="#kontakt" data-package="Starter">Starter anfragen</a></article>
+          <article class="package featured"><span class="tag">Beliebte Wahl</span><h3>Growth</h3><div class="desc">Mehr Content und eine kontinuierliche Präsenz für deine Marke.</div><div class="cost">499 € <small>/ Monat, ab</small></div><ul><li>Monatliche Content-Strategie</li><li>Bis zu 8 Kurzvideos</li><li>Post- und Reel-Design</li><li>Monatliche Auswertung</li></ul><a class="btn" href="#kontakt" data-package="Growth">Growth anfragen</a></article>
+          <article class="package"><span class="tag">Für ambitionierte Ziele</span><h3>Premium</h3><div class="desc">Umfassende Unterstützung für einen starken und einheitlichen Auftritt.</div><div class="cost">899 € <small>/ Monat, ab</small></div><ul><li>Individuelle Content-Strategie</li><li>Bis zu 12 Kurzvideos</li><li>Design und Redaktionsplanung</li><li>Regelmäßige Optimierung</li></ul><a class="btn" href="#kontakt" data-package="Premium">Premium anfragen</a></article>
+        </div>
+        <p class="note">Alle Preise sind unverbindliche Start- und Beispielpreise. Der endgültige Preis richtet sich nach Umfang, Aufwand und individuellen Anforderungen.</p>
+      </div>
+    </section>
+
+    <section id="ueber-uns">
+      <div class="wrap about-grid">
+        <div class="about-panel"><span>NAYJAN STUDIOS · CREATIVE PARTNERS</span><strong>Gute Ideen verdienen einen starken Auftritt.</strong><span>Strategisch gedacht. Kreativ gemacht.</span></div>
+        <div class="about-copy"><div class="kicker">Über NAYJAN Studios</div><h2>Wir machen digital sichtbar, was dich besonders macht.</h2><p>Wir sind ein kreatives Studio mit Fokus auf Social Media, Videocontent und Webdesign. Unser Ziel ist es, Unternehmen, Selbstständige und persönliche Marken dabei zu unterstützen, online professionell aufzutreten und weiterzuwachsen.</p><p>Wir verbinden frische Ideen mit einem klaren Design und setzen Projekte unkompliziert und persönlich um.</p><div class="pill-row"><span class="pill">Kreativ</span><span class="pill">Persönlich</span><span class="pill">Modern</span><span class="pill">Zielorientiert</span></div></div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div class="wrap">
+        <div class="contact-box">
+          <div><div class="kicker">Lass uns sprechen</div><h2>Eine Idee im Kopf?<br>Wir machen mehr daraus.</h2><p>Erzähl uns kurz, was du vorhast. Gemeinsam finden wir heraus, wie wir deinen digitalen Auftritt nach vorne bringen können.</p></div>
+          <div class="contact-side"><b>Dein nächster Schritt</b><p>Schick uns eine Nachricht mit deinem Projekt, deinen Zielen und dem gewünschten Leistungsbereich. Wir können anschließend ein passendes Angebot zusammenstellen.</p><a class="btn" href="mailto:">Kontakt-E-Mail ergänzen ↗</a><p style="margin-top:12px;font-size:11px">Hinweis: Vor dem Veröffentlichen bitte die E-Mail-Adresse im Website-Code hinterlegen.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><div class="footer-inner"><a class="brand" href="#start">NAYJAN<span>.</span> STUDIOS</a><span>© <span id="year"></span> NAYJAN Studios. Alle Rechte vorbehalten.</span><a href="#start">Zurück nach oben ↑</a></div></footer>
+  <script>
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('navlinks');
+    menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); menu.textContent = open ? '✕' : '☰'; });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { nav.classList.remove('open'); menu.setAttribute('aria-expanded','false'); menu.textContent='☰'; }));
+    document.querySelectorAll('[data-package]').forEach(link => link.addEventListener('click', () => { sessionStorage.setItem('nayjan-package', link.dataset.package); }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const contactLink = document.querySelector('.contact-side .btn');
+    contactLink.addEventListener('click', event => { event.preventDefault(); alert('Bitte tragt zuerst eure Kontakt-E-Mail-Adresse in den mailto-Link im Website-Code ein.'); });
+  </script>
+</body>
+</html>
