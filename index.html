@@ -107,6 +107,74 @@ footer{background:rgba(255,255,255,.55)}
 }
 
 .skip-link{position:absolute;left:16px;top:-60px;z-index:100;background:#fff;color:#111;padding:12px 16px;border-radius:10px;font-weight:800;box-shadow:var(--shadow)}.skip-link:focus{top:12px}
+
+/* NAYJAN visual refinement — editorial, confident and conversion-focused */
+:root{
+ --bg:#f7f8fc;--paper:#fff;--ink:#111426;--muted:#697084;--line:#e7e9f1;
+ --blue:#565cf0;--blue-dark:#4147d8;--lav:#eef0ff;--dark:#101321;
+ --r:26px;--shadow:0 24px 70px rgba(25,31,75,.09)
+}
+body{background:var(--bg);letter-spacing:-.01em}
+header.container{position:sticky;top:0;height:78px;background:rgba(247,248,252,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(226,229,239,.72)}
+.logo{font-size:18px;letter-spacing:-.8px}
+.nav{gap:29px}
+.nav a{transition:color .2s ease,background .2s ease,transform .2s ease}
+.nav .nav-button{padding:13px 20px;box-shadow:0 7px 18px rgba(17,20,38,.12)}
+.hero{padding:88px 0 112px;position:relative}
+.hero:before{content:"";position:absolute;inset:0 0 10%;pointer-events:none;opacity:.38;background-image:linear-gradient(rgba(86,92,240,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(86,92,240,.055) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent)}
+.hero-grid{position:relative;z-index:1;gap:65px}
+h1{font-size:clamp(58px,7.4vw,96px);line-height:.96;letter-spacing:-.075em;font-weight:850}
+h1 span{background:linear-gradient(110deg,#565cf0 5%,#8a72f5 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:16px;max-width:510px;line-height:1.85}
+.btn{padding:15px 23px;box-shadow:0 8px 20px rgba(86,92,240,.14)}
+.btn.light{box-shadow:none;background:rgba(255,255,255,.55)}
+.hero-art{min-height:500px;border:1px solid rgba(111,119,230,.13);background:radial-gradient(circle at 50% 43%,#e1e4ff 0,#eff0ff 48%,#e8eaff 100%);box-shadow:0 28px 80px rgba(69,78,180,.11)}
+.hero-art:before{background:radial-gradient(circle at 35% 30%,#d9dcff,#bfc6ff 70%);box-shadow:0 28px 65px rgba(80,91,210,.14)}
+.orb{background:linear-gradient(145deg,#929aff 0%,#5d66f0 48%,#373fc3 100%);border:1px solid rgba(255,255,255,.48);box-shadow:inset -16px -18px 34px rgba(22,28,130,.2),inset 10px 10px 22px rgba(255,255,255,.25),0 30px 65px rgba(67,82,213,.3)}
+.sticker{border:1px solid rgba(255,255,255,.8);box-shadow:0 14px 35px rgba(47,55,133,.12)}
+section{padding:108px 0}
+.section-top{margin-bottom:48px}
+.section-top h2,.center-title h2{letter-spacing:-.065em}
+.section-top p,.center-title p{font-size:14px;line-height:1.9}
+.service{border-radius:25px;padding:30px;min-height:350px;box-shadow:0 4px 18px rgba(25,31,75,.025)}
+.service:hover{transform:translateY(-8px);border-color:#d8dcff;box-shadow:0 25px 55px rgba(25,31,75,.1)}
+.service-icon{width:52px;height:52px;border-radius:17px}
+.service h3{font-size:23px;letter-spacing:-.045em}
+.process{background:linear-gradient(180deg,#fff 0%,#fbfbff 100%);border-top:1px solid #f0f1f6;border-bottom:1px solid #f0f1f6}
+.step{border-top:1px solid #dfe2ed;padding-top:24px}
+.step-num{letter-spacing:1.3px}
+.step h3{font-size:20px;letter-spacing:-.04em}
+.pricing{background:radial-gradient(ellipse at 50% -30%,#252b55 0%,#101321 62%);position:relative;overflow:hidden}
+.pricing:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.12) .7px,transparent .7px);background-size:22px 22px;opacity:.22;mask-image:linear-gradient(to bottom,black,transparent)}
+.pricing>.container{position:relative;z-index:1}
+.plan{border-radius:25px;padding:30px;background:rgba(255,255,255,.055);backdrop-filter:blur(10px);border-color:rgba(255,255,255,.12)}
+.plan.popular{background:linear-gradient(155deg,rgba(83,91,226,.38),rgba(37,43,84,.95));border-color:#818aff;box-shadow:0 20px 55px rgba(0,0,0,.2)}
+.plan h3{letter-spacing:-.045em}
+.plan .btn{box-shadow:none}
+.about-visual{background:radial-gradient(circle at 50% 48%,#fff 0%,#e7e9ff 52%,#dfe2ff 100%);border:1px solid #e2e5ff}
+.about-word{font-size:clamp(48px,6vw,70px);letter-spacing:-.085em}
+.about-copy h2{letter-spacing:-.07em}
+.values span{background:#fff;box-shadow:0 3px 12px rgba(25,31,75,.035)}
+.contact-panel{background:linear-gradient(125deg,#5159e8 0%,#6970f4 58%,#7774ee 100%);box-shadow:0 28px 70px rgba(74,82,210,.18)}
+.contact-form{border:1px solid rgba(255,255,255,.8);box-shadow:0 22px 65px rgba(25,31,75,.17)}
+.form-field input,.form-field select,.form-field textarea{background:#f8f9fd;border-color:#e5e7f0;border-radius:13px}
+.form-submit{box-shadow:0 10px 24px rgba(86,92,240,.2)}
+footer{background:#fff}
+.reveal{transform:translateY(30px)}
+@media(max-width:850px){
+ .hero{padding:70px 0 85px}.hero-grid{gap:42px}.hero-art{min-height:440px}
+ section{padding:85px 0}
+}
+@media(max-width:620px){
+ header.container{height:70px}
+ .hero{padding:52px 0 66px}
+ h1{font-size:clamp(52px,14vw,66px);letter-spacing:-.075em}
+ .hero-art{min-height:360px}
+ section{padding:74px 0}
+ .service{min-height:285px}
+ .contact-panel{border-radius:25px}
+}
+
 </style>
 </head>
 <body>
