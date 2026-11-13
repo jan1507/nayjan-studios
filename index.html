@@ -67,7 +67,7 @@ footer{padding:28px 0 35px;border-top:1px solid var(--line)}.footer-inner{displa
  --line:#e8eaf0;--blue:#4f63ed;--blue-dark:#3549d2;--lav:#3158d5;
  --dark:#11131b;--r:26px;--shadow:0 24px 70px rgba(20,27,66,.09);
 }
-body{background:var(--bg);top:0;height:76px;background:rgba(250,250,252,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(225,228,237,.72)}
+body{background:var(--bg);min-height:100vh}
 .logo{letter-spacing:-.8px}
 .nav{gap:29px}
 .nav a{transition:color .2s ease,background .2s ease,transform .2s ease}
@@ -274,6 +274,17 @@ h1 span,.about-word{background:none!important;color:#3158d5!important;-webkit-te
 .about-visual{background:#edf1f8;border:1px solid #dfe3e9}
 .contact-panel{background:#3158d5;box-shadow:none}
 .image-credits{display:block;flex-basis:100%;font-size:11px;color:#9299a5;margin-top:16px;line-height:1.6}
+
+/* Fehlerkorrektur: einheitliche Darstellung und lesbare Texte */
+body{height:auto!important;min-height:100vh;position:static}
+header.container{height:78px;position:sticky;top:0;z-index:30}
+.hero-grid{display:grid;align-items:center}
+.hero-grid>div:first-child{min-width:0;position:relative;z-index:2}
+.hero h1{display:block;position:relative;max-width:100%;line-height:1.04;letter-spacing:-.055em;overflow-wrap:normal;word-break:normal}
+.hero h1 span{display:inline;color:var(--blue);background:none;-webkit-text-fill-color:currentColor}
+.hero .label,.hero .lead,.hero .buttons,.hero .proof{position:relative;z-index:2}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.hero h1{font-size:clamp(48px,13vw,62px);letter-spacing:-.06em}}
 </style>
 </head>
 <body>
@@ -305,9 +316,9 @@ h1 span,.about-word{background:none!important;color:#3158d5!important;-webkit-te
 <article class="plan popular"><span class="plan-tag">Beliebte Wahl</span><h3>Growth</h3><p>Für einen aktiven Kanal und einen konstanten Content-Auftritt.</p><div class="amount">499 € <small>/ Monat · ab</small></div><ul><li>Monatliche Content-Strategie</li><li>Bis zu 8 Kurzvideos</li><li>Post- und Reel-Design</li><li>Monatliche Auswertung</li></ul><a class="btn" href="#contact" data-plan="Growth">Growth anfragen ↗</a></article>
 <article class="plan"><span class="plan-tag">Für größere Ziele</span><h3>Premium</h3><p>Mehr Umfang und kontinuierliche Unterstützung für deine Marke.</p><div class="amount">899 € <small>/ Monat · ab</small></div><ul><li>Individuelle Content-Strategie</li><li>Bis zu 12 Kurzvideos</li><li>Design und Redaktionsplanung</li><li>Regelmäßige Optimierung</li></ul><a class="btn" href="#contact" data-plan="Premium">Premium anfragen ↗</a></article>
 </div><p class="pricing-note">Beispielpreise zur Orientierung. Der endgültige Preis richtet sich nach Umfang, Aufwand und individuellen Anforderungen.</p></div></section>
-<section id="about"><div class="container about-grid"><div class="about-visual about-type"><div class="about-word">NAYJAN.</div><div class="about-stamp">SOCIAL · CONTENT</div></div><div class="about-stamp">CREATIVE DIGITAL STUDIO</div></div><div class="about-copy"><div class="label">Über NAYJAN Studios</div><h2>Wir machen aus Ideen einen Auftritt.</h2><p>NAYJAN Studios steht für kreative digitale Dienstleistungen. Wir unterstützen Unternehmen, Selbstständige und persönliche Marken dabei, online sichtbarer und professioneller aufzutreten.</p><p>Unser Fokus liegt auf Social Media und Videocontent. Wir denken mit, bringen eigene Ideen ein und setzen Projekte mit einem Auge fürs Detail um.</p><div class="values"><span>Persönlich</span><span>Kreativ</span><span>Modern</span><span>Zielorientiert</span></div></div></div></section>
+<section id="about"><div class="container about-grid"><div class="about-visual about-type"><div class="about-word">NAYJAN.</div><div class="about-stamp">SOZIAL · CONTENT</div></div><div class="about-copy"><div class="label">Über NAYJAN Studios</div><h2>Wir machen aus Ideen einen Auftritt.</h2><p>NAYJAN Studios steht für kreative digitale Dienstleistungen. Wir unterstützen Unternehmen, Selbstständige und persönliche Marken dabei, online sichtbarer und professioneller aufzutreten.</p><p>Unser Fokus liegt auf Social Media und Videocontent. Wir denken mit, bringen eigene Ideen ein und setzen Projekte mit einem Auge fürs Detail um.</p><div class="values"><span>Persönlich</span><span>Kreativ</span><span>Modern</span><span>Zielorientiert</span></div></div></div></section>
 <section class="contact" id="contact"><div class="container"><div class="contact-panel contact-layout">
-<div class="contact-info"><div class="label">Let's work together</div><h2>Bereit für den<br>nächsten Schritt?</h2><p>Erzähl uns von deiner Idee. Wir melden uns persönlich bei dir und besprechen, wie wir dein Projekt gemeinsam nach vorne bringen.</p><div class="contact-detail">NAYJAN Studios · Social Media · Content</div></div>
+<div class="contact-info"><div class="label">Lass uns zusammenarbeiten</div><h2>Bereit für den<br>nächsten Schritt?</h2><p>Erzähl uns von deiner Idee. Wir melden uns persönlich bei dir und besprechen, wie wir dein Projekt gemeinsam nach vorne bringen.</p><div class="contact-detail">NAYJAN Studios · Social Media · Content</div></div>
 <form class="contact-form" id="contactForm">
 <div class="form-grid">
 <div class="form-field"><label for="contactName">Dein Name *</label><input id="contactName" name="name" autocomplete="name" placeholder="Vor- und Nachname" required></div>
