@@ -58,15 +58,65 @@ footer{padding:28px 0 35px;border-top:1px solid var(--line)}.footer-inner{displa
 @media(max-width:620px){.form-grid{grid-template-columns:1fr;gap:0}.contact-form{padding:20px}.reveal{transform:translateY(16px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
+
+/* NAYJAN visual refinement — premium creative studio */
+:root{
+ --bg:#f7f8fb;--paper:#fff;--ink:#11131a;--muted:#686d7a;
+ --line:#e8eaf0;--blue:#4f63ed;--blue-dark:#3549d2;--lav:#edf0ff;
+ --dark:#11131b;--r:26px;--shadow:0 24px 70px rgba(20,27,66,.09);
+}
+body{background:linear-gradient(180deg,#fbfbfd 0%,#f5f6fa 55%,#fbfbfd 100%)}
+header{position:sticky;top:0;height:76px;background:rgba(250,250,252,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(225,228,237,.72)}
+.logo{letter-spacing:-.8px}
+.nav{gap:29px}
+.nav a{transition:color .2s ease,background .2s ease,transform .2s ease}
+.nav .nav-button{box-shadow:0 8px 20px rgba(17,19,26,.12)}
+.hero{padding-top:88px;background:radial-gradient(ellipse at 82% 38%,rgba(91,111,255,.08),transparent 34%)}
+h1{font-weight:900;letter-spacing:-6.5px}
+h1 span{background:linear-gradient(110deg,#4d61eb 10%,#7c69ed 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-art{background:linear-gradient(145deg,#edf0ff 0%,#e2e7ff 55%,#f0edff 100%);border:1px solid rgba(87,104,224,.12);box-shadow:0 30px 80px rgba(61,76,190,.12)}
+.hero-art:before{background:radial-gradient(circle at 35% 30%,#d9ddff,#bfc8ff 68%,#aab5ff)}
+.orb{background:linear-gradient(145deg,#8794ff 0%,#586df0 48%,#3548ce 100%);box-shadow:inset -18px -18px 40px rgba(13,24,114,.18),0 32px 65px rgba(67,82,213,.28)}
+.sticker{border:1px solid rgba(225,228,240,.8);box-shadow:0 15px 35px rgba(33,43,110,.12)}
+section{scroll-margin-top:88px}
+.section-top h2,.center-title h2,.about-copy h2{font-weight:850}
+.service{border-radius:22px;box-shadow:0 3px 14px rgba(18,25,55,.025)}
+.service:hover{border-color:#d7dcff;box-shadow:0 24px 55px rgba(35,48,125,.10)}
+.service-icon{border:1px solid rgba(82,102,242,.08)}
+.process{background:linear-gradient(180deg,#fff 0%,#fbfbfe 100%)}
+.step{border-top:1px solid #e5e7ef}
+.pricing{background:radial-gradient(ellipse at 50% -15%,#252b50 0%,#151720 45%,#101117 100%)}
+.plan{border-radius:24px;box-shadow:0 8px 28px rgba(0,0,0,.10)}
+.plan.popular{background:linear-gradient(155deg,#2a3267 0%,#202647 100%);box-shadow:0 22px 55px rgba(58,72,180,.2)}
+.plan .btn{transition:transform .2s ease,background .2s ease}
+.plan .btn:hover{transform:translateY(-2px)}
+.about-visual{background:radial-gradient(circle at 50% 45%,#f7f7ff 0%,#e9ecff 48%,#dfe4ff 100%);border:1px solid #e0e4ff}
+.about-word{background:linear-gradient(120deg,#4358e6,#8272ec);-webkit-background-clip:text;background-clip:text;color:transparent}
+.contact-panel{background:linear-gradient(125deg,#4e62ed 0%,#5868e9 48%,#735fe2 100%);box-shadow:0 25px 65px rgba(69,82,205,.19)}
+.contact-form{border:1px solid rgba(255,255,255,.72);box-shadow:0 24px 60px rgba(24,30,100,.20)}
+footer{background:rgba(255,255,255,.55)}
+.btn{box-shadow:0 8px 18px rgba(66,82,214,.13)}
+.btn.light{box-shadow:none}
+::selection{background:#dce1ff;color:#1c286f}
+@media(max-width:620px){
+ header{height:70px}
+ .hero{padding-top:53px}
+ h1{letter-spacing:-4.5px}
+ .nav{box-shadow:0 18px 38px rgba(20,27,66,.12)}
+ .hero-art{border-radius:25px}
+}
+
+.skip-link{position:absolute;left:16px;top:-60px;z-index:100;background:#fff;color:#111;padding:12px 16px;border-radius:10px;font-weight:800;box-shadow:var(--shadow)}.skip-link:focus{top:12px}
 </style>
 </head>
 <body>
 <header class="container">
 <a class="logo" href="#home">NAYJAN<i>.</i> STUDIOS</a>
-<nav class="nav" id="nav"><a href="#services">Leistungen</a><a href="#ablauf">Unser Ablauf</a><a href="#preise">Pakete</a><a href="#about">Über uns</a><a class="nav-button" href="#contact">Projekt anfragen ↗</a></nav>
-<button class="menu" id="menu" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+<nav class="nav" id="nav" aria-label="Hauptnavigation"><a href="#services">Leistungen</a><a href="#ablauf">Unser Ablauf</a><a href="#preise">Pakete</a><a href="#about">Über uns</a><a class="nav-button" href="#contact">Projekt anfragen ↗</a></nav>
+<button class="menu" id="menu" aria-label="Menü öffnen" aria-controls="nav" aria-expanded="false">☰</button>
 </header>
-<main>
+<a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+<main id="main-content">
 <section class="hero" id="home"><div class="container hero-grid">
 <div><div class="label">Creative studio · Germany</div><h1>Make your<br>brand <span>matter.</span></h1><p class="lead">Wir bringen deine Marke nach vorne. Mit kreativem Content, durchdachter Social-Media-Betreuung und Websites, die Eindruck machen.</p><div class="buttons"><a class="btn" href="#contact">Projekt starten&nbsp; ↗</a><a class="btn light" href="#services">Was wir machen</a></div><div class="proof"><div><b>01 — Content</b>Ideen, die auffallen</div><div><b>02 — Social</b>Auftritte, die wachsen</div><div><b>03 — Web</b>Design mit Wirkung</div></div></div>
 <div class="hero-art"><div class="art-top"><span>NAYJAN STUDIOS</span><span>EST. FOR IDEAS</span></div><div class="art-center"><div class="orb">N.</div><div class="art-caption">IDEAS INTO IMPACT</div></div><div class="sticker one"><span>✳</span>Creative thinking</div><div class="sticker two"><span>↗</span>Digital growth</div></div>
