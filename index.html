@@ -175,11 +175,60 @@ footer{background:#fff}
  .contact-panel{border-radius:25px}
 }
 
+
+/* NAYJAN brand system + Emil Kowalski interaction polish */
+:root{
+ --bg:#f7f8fc;--paper:#fff;--ink:#101522;--muted:#687080;
+ --line:rgba(22,31,55,.10);--blue:#465cf5;--blue-dark:#3045d8;
+ --lav:#edf0ff;--dark:#101522;--r:22px;
+ --shadow:0 18px 50px rgba(20,30,70,.075);
+ --ease-out:cubic-bezier(.16,1,.3,1);
+}
+.logo{display:inline-flex;align-items:center;gap:10px;letter-spacing:0}
+.brand-mark{width:36px;height:36px;display:grid;place-items:center;border-radius:11px;
+ color:#fff;background:linear-gradient(145deg,#6678ff,#3549dc);
+ box-shadow:0 5px 14px rgba(70,92,245,.22);flex:none}
+.brand-mark svg{width:25px;height:25px}
+.brand-word{display:flex;align-items:baseline;gap:7px;font-size:17px;font-weight:900;letter-spacing:-.8px}
+.brand-word>span{font-size:9px;letter-spacing:2.1px;color:#858b9b;font-weight:800}
+.hero{padding-top:70px}
+.hero-art{background:linear-gradient(145deg,#eef0ff 0%,#e2e7ff 100%);border:1px solid rgba(70,92,245,.09)}
+.hero-art:before{background:radial-gradient(circle at 35% 30%,#fff 0,#cbd2ff 55%,#b9c4ff 100%)}
+.orb{border-radius:34px;width:154px;height:154px;transform:rotate(-8deg);
+ background:linear-gradient(145deg,#7484ff,#3549dc);box-shadow:inset -12px -14px 30px rgba(13,24,114,.18),0 24px 45px rgba(67,82,213,.22)}
+.art-caption{letter-spacing:1.65px}
+.sticker{border:1px solid rgba(20,30,70,.06);box-shadow:0 12px 32px rgba(20,30,70,.10)}
+.service,.plan,.step,.btn,.nav a,.sticker,.brand-mark{transition:transform 220ms var(--ease-out),box-shadow 220ms var(--ease-out),background-color 180ms ease-out,border-color 180ms ease-out,color 180ms ease-out}
+.btn:active,.nav-button:active,[data-plan]:active{transform:scale(.97)}
+.service:focus-within,.plan:focus-within{outline:2px solid var(--blue);outline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+ outline:3px solid rgba(70,92,245,.42);outline-offset:3px
+}
+.form-field input,.form-field select,.form-field textarea{transition:border-color 180ms ease-out,box-shadow 180ms ease-out}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{
+ border-color:var(--blue);box-shadow:0 0 0 4px rgba(70,92,245,.10);outline:0
+}
+@media (hover:hover) and (pointer:fine){
+ .service:hover{transform:translateY(-5px)}
+ .plan:hover{transform:translateY(-4px)}
+ .plan.popular:hover{transform:translateY(-11px)}
+ .brand-mark:hover{transform:rotate(-5deg) scale(1.04)}
+}
+@media (max-width:700px){
+ .brand-word{font-size:15px}.brand-word>span{font-size:8px;letter-spacing:1.5px}
+ .brand-mark{width:33px;height:33px;border-radius:10px}
+ .hero{padding-top:48px}
+}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+
 </style>
 </head>
 <body>
 <header class="container">
-<a class="logo" href="#home">NAYJAN<i>.</i> STUDIOS</a>
+<a class="logo" href="#home" aria-label="NAYJAN Studios – Startseite"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" role="img"><path d="M10 33V11h7l17 20V11h-7v10L17 11h-7v22Z" fill="currentColor"/><path d="M29 11h5v5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span><span class="brand-word">NAYJAN<span>STUDIOS</span></span></a>
 <nav class="nav" id="nav" aria-label="Hauptnavigation"><a href="#services">Leistungen</a><a href="#ablauf">Unser Ablauf</a><a href="#preise">Pakete</a><a href="#about">Über uns</a><a class="nav-button" href="#contact">Projekt anfragen ↗</a></nav>
 <button class="menu" id="menu" aria-label="Menü öffnen" aria-controls="nav" aria-expanded="false">☰</button>
 </header>
@@ -187,7 +236,7 @@ footer{background:#fff}
 <main id="main-content">
 <section class="hero" id="home"><div class="container hero-grid">
 <div><div class="label">Creative studio · Germany</div><h1>Make your<br>brand <span>matter.</span></h1><p class="lead">Wir bringen deine Marke nach vorne. Mit kreativem Content, durchdachter Social-Media-Betreuung und Websites, die Eindruck machen.</p><div class="buttons"><a class="btn" href="#contact">Projekt starten&nbsp; ↗</a><a class="btn light" href="#services">Was wir machen</a></div><div class="proof"><div><b>01 — Content</b>Ideen, die auffallen</div><div><b>02 — Social</b>Auftritte, die wachsen</div><div><b>03 — Web</b>Design mit Wirkung</div></div></div>
-<div class="hero-art"><div class="art-top"><span>NAYJAN STUDIOS</span><span>EST. FOR IDEAS</span></div><div class="art-center"><div class="orb">N.</div><div class="art-caption">IDEAS INTO IMPACT</div></div><div class="sticker one"><span>✳</span>Creative thinking</div><div class="sticker two"><span>↗</span>Digital growth</div></div>
+<div class="hero-art"><div class="art-top"><span>NAYJAN STUDIOS</span><span>EST. FOR IDEAS</span></div><div class="art-center"><div class="orb">N.</div><div class="art-caption">SOCIAL · CONTENT · DIGITAL</div></div><div class="sticker one"><span>✳</span>Content with purpose</div><div class="sticker two"><span>↗</span>Made to grow</div></div>
 </div></section>
 <section id="services"><div class="container"><div class="section-top"><div><div class="label">Unsere Leistungen</div><h2>Digital. Kreativ.<br>Auf den Punkt.</h2></div><p>Die richtigen Inhalte und ein professioneller Auftritt machen den Unterschied. Wir helfen dir, beides aufzubauen.</p></div>
 <div class="services">
@@ -224,7 +273,7 @@ footer{background:#fff}
 <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
 </form></div></div></section>
 </main>
-<footer><div class="container footer-inner"><a class="logo" href="#home">NAYJAN<i>.</i> STUDIOS</a><span>© <span id="year"></span> NAYJAN Studios</span><div class="footer-links"><a href="#services">Leistungen</a><a href="#preise">Preise</a><a href="#contact">Kontakt</a></div></div></footer>
+<footer><div class="container footer-inner"><a class="logo" href="#home" aria-label="NAYJAN Studios – Startseite"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" role="img"><path d="M10 33V11h7l17 20V11h-7v10L17 11h-7v22Z" fill="currentColor"/><path d="M29 11h5v5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span><span class="brand-word">NAYJAN<span>STUDIOS</span></span></a><span>© <span id="year"></span> NAYJAN Studios</span><div class="footer-links"><a href="#services">Leistungen</a><a href="#preise">Preise</a><a href="#contact">Kontakt</a></div></div></footer>
 <script>
 const menu=document.getElementById('menu'),nav=document.getElementById('nav');
 menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});
